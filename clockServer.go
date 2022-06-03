@@ -33,7 +33,7 @@ func main() {
 	}
 
 	// Listen on TCP port and run on argument 2
-	l, err := net.Listen("tcp", "localhost:"+os.Args[2])
+	l, err := net.Listen("tcp", "0.0.0.0:"+os.Args[2])
 	if err != nil {
 		log.Fatal(err)
 	}
